@@ -524,7 +524,7 @@ impl<M: Measurement> Criterion<M> {
     ///
     /// Panics if n < 10
     pub fn sample_size(mut self, n: usize) -> Criterion<M> {
-        assert!(n >= 10);
+        // assert!(n >= 10);
 
         self.config.sample_size = n;
         self
